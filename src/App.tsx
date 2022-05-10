@@ -5,7 +5,7 @@ import { TodosPage } from './pages/TodosPage';
 
 const theme = {
     backgroundDark: 'teal',
-    backgroundLight: '#ADD8E6',
+    backgroundLight: '#61DBFB',
     backgroundLightHover: 'lightgrey',
     border: 'black',
 };
