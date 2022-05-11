@@ -1,6 +1,6 @@
 # Notino homework
 
-This is project a project developed based on assignment of notino homework.
+This is a project developed based on assignment of notino homework.
 For quick setup, create-react-app was used to initialize the project, instead of custom configuration of babel, webpack, eslint...
 
 To start the app, please first run `yarn` to install dependencies.
