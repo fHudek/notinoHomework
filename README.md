@@ -36,7 +36,7 @@ Based on the assignment app is conected to only one API which is returning list 
 This list is then provided by context and accessed by hooks where needed.
 Detail pages are calling the same api and then getting required todo from the list. In most cases detail page would be connected to a different api and get just one entity as a response(quite often with more detailed structure than on listing pages).
 Design of the app was should be very minimalistic. Due to the fact that it's so simple, there was no need for breakpoints or some other features of responsive design.
-Testing of the app, that is really important in normal project, was not required by the assignment.
+Testing and text localization of the app, that is important in normal project, was not required by the assignment.
 
 # Bugs and issues of the original code
 
