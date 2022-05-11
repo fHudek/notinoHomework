@@ -25,9 +25,9 @@ const Logo = styled.img`
 
 export const Header = () => {
     return (
-        <HeaderWrapper>
-            <HeaderLink to={ROUTES.HOME}>
-                <Logo src={logo} />
+        <HeaderWrapper data-testid="header-wrapper">
+            <HeaderLink data-testid="header-link" to={ROUTES.HOME}>
+                <Logo src={logo} data-testid="header-logo" />
             </HeaderLink>
             Homework TODO App
         </HeaderWrapper>
