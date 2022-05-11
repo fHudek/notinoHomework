@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../Routes';
-import { DescriptionWrrapper } from './DescriptionWrapper';
+import { ROUTES } from '../../Routes';
+import { DescriptionWrrapper } from '../common/DescriptionWrapper';
 
 type Props = {
     id?: string;

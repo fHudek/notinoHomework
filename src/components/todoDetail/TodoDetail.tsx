@@ -1,7 +1,7 @@
-import { ROUTES } from '../Routes';
-import { Todo } from '../type/todo';
-import { BackLink } from './BackLink';
-import { DescriptionWrrapper } from './DescriptionWrapper';
+import { ROUTES } from '../../Routes';
+import { Todo } from '../../type/todo';
+import { BackLink } from '../common/BackLink';
+import { DescriptionWrrapper } from '../common/DescriptionWrapper';
 
 type Props = {
     todo: Todo;

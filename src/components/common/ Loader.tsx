@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import logo from '../svg/logo.svg';
+import logo from '../../svg/logo.svg';
 
 const rotate = keyframes`
   from {

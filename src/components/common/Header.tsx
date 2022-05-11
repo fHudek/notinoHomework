@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../Routes';
-import logo from '../svg/logo.svg';
+import { ROUTES } from '../../Routes';
+import logo from '../../svg/logo.svg';
 
 const HeaderLink = styled(Link)`
     text-decoration: none;

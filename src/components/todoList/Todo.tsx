@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { generatePath, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ROUTES } from '../Routes';
-import { Todo as TodoType } from '../type/todo';
+import { ROUTES } from '../../Routes';
+import { Todo as TodoType } from '../../type/todo';
 
 const TodoWrapper = styled(Link)`
     display: block;

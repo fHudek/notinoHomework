@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { Header } from '../Header';
 import { BrowserRouter } from 'react-router-dom';
-import { ROUTES } from '../../Routes';
+import { ROUTES } from '../../../Routes';
 import logo from '../../svg/logo.svg';
 
 test('render header', () => {

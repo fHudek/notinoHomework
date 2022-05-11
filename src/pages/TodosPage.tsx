@@ -1,6 +1,6 @@
-import { Loader } from '../components/ Loader';
-import { PageContainer } from '../components/PageContainer';
-import { Todo } from '../components/Todo';
+import { Loader } from '../components/common/ Loader';
+import { PageContainer } from '../components/common/PageContainer';
+import { Todo } from '../components/todoList/Todo';
 import { useData } from '../providers/DataProvider';
 
 export const TodosPage = () => {

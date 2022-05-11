@@ -1,5 +1,5 @@
-import { PageContainer } from '../components/PageContainer';
-import { DescriptionWrrapper } from '../components/DescriptionWrapper';
+import { PageContainer } from '../components/common/PageContainer';
+import { DescriptionWrrapper } from '../components/common/DescriptionWrapper';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../Routes';
 
