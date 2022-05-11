@@ -18,8 +18,8 @@ const Wrapper = styled.div`
 
 const Spinner = styled.img`
     animation: ${rotate} 7s linear infinite;
-    width: 20rem;
-    height: 20rem;
+    max-width: 25rem;
+    max-height: 25rem;
 `;
 
 export const Loader = () => {

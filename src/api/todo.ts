@@ -7,7 +7,6 @@ export const getTodos = () =>
     axios
         .get<Todo[]>(`${BASE_URL}/todo`)
         .then((response) => {
-            console.log(response);
             const { data } = response;
             if (!Array.isArray(data)) {
                 throw Error(`Todos response was not an array`);
@@ -25,5 +24,5 @@ export const getTodos = () =>
         })
         .catch((error: Error) => {
             // handle error
-            console.log('Redirect to an error page.', error);
+            console.log('Here would be a redirect to an error page, or setting of error to a store.', error);
         });

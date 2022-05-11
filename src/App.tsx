@@ -1,22 +1,28 @@
-import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './GlobalStyle';
-import { TodosPage } from './pages/TodosPage';
+import { DataProvider } from './providers/DataProvider';
+import { Routes } from './Routes';
 
 const theme = {
     backgroundDark: 'teal',
-    backgroundLight: '#61DBFB',
+    backgroundLight: 'white',
     backgroundLightHover: 'lightgrey',
     border: 'black',
+    textDark: 'black',
 };
 
-function App() {
+const App = () => {
     return (
-        <ThemeProvider theme={theme}>
-            <GlobalStyle />
-            <TodosPage />
-        </ThemeProvider>
+        <Router>
+            <DataProvider>
+                <ThemeProvider theme={theme}>
+                    <GlobalStyle />
+                    <Routes />
+                </ThemeProvider>
+            </DataProvider>
+        </Router>
     );
-}
+};
 
 export default App;

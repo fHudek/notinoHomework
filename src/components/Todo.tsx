@@ -1,8 +1,13 @@
-import React from 'react';
+import { memo } from 'react';
+import { generatePath, Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { ROUTES } from '../Routes';
 import { Todo as TodoType } from '../type/todo';
 
-const TodoWrapper = styled.div`
+const TodoWrapper = styled(Link)`
+    display: block;
+    text-decoration: none;
+    color: ${({ theme }) => theme.textDark};
     padding: 1rem;
     background-color: ${({ theme }) => theme.backgroundLight};
     border: 1px solid ${({ theme }) => theme.border};
@@ -18,16 +23,10 @@ const TodoWrapper = styled.div`
 type Props = {
     todo: TodoType;
 };
-export class Todo extends React.PureComponent<Props> {
-    handleOnClick() {
-        window.location.href = '/detail';
-    }
-
-    render() {
-        return (
-            <TodoWrapper>
-                <div onClick={this.handleOnClick}>{this.props.todo.title}</div>
-            </TodoWrapper>
-        );
-    }
-}
+export const Todo = memo(({ todo }: Props) => {
+    return (
+        <TodoWrapper to={generatePath(ROUTES.TODO_DETAIL, { id: todo.id })}>
+            <div>{todo.title}</div>
+        </TodoWrapper>
+    );
+});

@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import styled from 'styled-components';
+import { Header } from './Header';
 
 const Page = styled.div`
     width: 100%;
@@ -20,7 +21,10 @@ type Props = {
 export const PageContainer = ({ children }: Props) => {
     return (
         <Page>
-            <Container>{children}</Container>
+            <Container>
+                <Header />
+                {children}
+            </Container>
         </Page>
     );
 };
