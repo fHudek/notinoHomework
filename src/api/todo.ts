@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { Todo } from '../type/todo';
 
-const BASE_URL = 'https://api.fake.rest/804ad78e-91b6-4b3f-b657-b1d4c15dd397';
+const BASE_URL = 'https://mocki.io/v1/e8046011-847b-43b6-b6ba-c9b40de554c7';
 
 export const getTodos = () =>
     axios
-        .get<Todo[]>(`${BASE_URL}/todo`)
+        .get<Todo[]>(`${BASE_URL}`)
         .then((response) => {
             const { data } = response;
             if (!Array.isArray(data)) {
